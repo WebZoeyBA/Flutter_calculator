@@ -16,7 +16,7 @@ class Calculator extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "WebZoeyBA Calculator",
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      theme: ThemeData(primarySwatch: Colors.grey),
       home: ZoeyCalculator(),
     );
   }
@@ -97,11 +97,15 @@ class _ZoeyCalculatorState extends State<ZoeyCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("WebZoeyBA calculator"),
+        title: Text(
+          "WebZoeyBA calculator",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
-        backgroundColor: Colors.grey[850],
       ),
       body: Column(
         children: <Widget>[
